@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">DemoFirebase</string>
+    <string name="loginSuccess">You are logged!</string>
+    <string name="loginFailed">Wrong email/password, please retry</string>
+    <string name="noInternet">Internet is required!</string>
+    <string name="login_emailHint">email</string>
+    <string name="login_passwordHint">password</string>
+    <string name="login_loginButton">Login</string>
+    <string name="profile_logoutButton">Logout</string>
+    <string name="profile_firstName_text">First Name:</string>
+    <string name="fake_firstName">Foofoofoo</string>
+    <string name="fake_lastName">Barbarbar</string>
+    <string name="profile_lastName_text">Last Name:</string>
+    <string name="fake_email">foobar@mail.com</string>
+    <string name="profile_email_text">Email:</string>
+</resources>

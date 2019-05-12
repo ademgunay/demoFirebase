@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <TextView
+        android:id="@+id/profileFirstNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="80dp"
+        android:text="@string/profile_firstName_text"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/profileFirstNameContentText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="@string/fake_firstName"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/profileFirstNameText"
+        app:layout_constraintStart_toEndOf="@id/profileFirstNameText"
+        app:layout_constraintTop_toTopOf="@id/profileFirstNameText" />
+
+    <TextView
+        android:id="@+id/profileLastNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profile_lastName_text"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/profileFirstNameText"
+        app:layout_constraintTop_toBottomOf="@id/profileFirstNameText" />
+
+    <TextView
+        android:id="@+id/profileLastNameContentText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="@string/fake_lastName"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/profileLastNameText"
+        app:layout_constraintStart_toEndOf="@id/profileLastNameText"
+        app:layout_constraintTop_toTopOf="@id/profileLastNameText" />
+
+    <TextView
+        android:id="@+id/profileEmailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profile_email_text"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/profileLastNameText"
+        app:layout_constraintTop_toBottomOf="@id/profileLastNameText" />
+
+    <TextView
+        android:id="@+id/profileEmailContentText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="@string/fake_email"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/profileEmailText"
+        app:layout_constraintStart_toEndOf="@id/profileEmailText"
+        app:layout_constraintTop_toTopOf="@id/profileEmailText" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/profileLogoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="@string/profile_logoutButton"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profileEmailText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
